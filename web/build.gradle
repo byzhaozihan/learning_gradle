@@ -1,0 +1,9 @@
+group 'com.zzh.gradle'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'war'
+
+dependencies {
+    compile project(":repository")
+    compile group: 'org.hibernate',name: 'hibernate-core', version: '3.6.3.Final'
+}
